@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <style>
+    :root {
+      --main-bg: #f4f7fa;
+      --primary: #19325a;
+      --accent: #ffa600;
+      --card-bg: #ffffff;
+      --text: #232d39;
+      --muted: #7a869a;
+      --border: #e7eaf0;
+    }
+    body {
+      background: var(--main-bg);
+      color: var(--text);
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      line-height: 1.5;
+    }
+    .container {
+      max-width: 900px;
+      margin: 2em auto;
+      padding: 2em;
+      background: var(--card-bg);
+      box-shadow: 0 8px 32px rgba(25,50,90,0.07);
+      border-radius: 18px;
+    }
+    header {
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1.2em;
+      margin-bottom: 2em;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: var(--primary);
+    }
+    header p {
+      color: var(--muted);
+      margin: 0.4em 0 0.2em;
+    }
+    header a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 0.5em;
+    }
+    section {
+      margin-bottom: 2.5em;
+    }
+    h2 {
+      color: var(--primary);
+      font-size: 1.5em;
+      margin-bottom: 0.5em;
+      border-left: 4px solid var(--accent);
+      padding-left: 0.6em;
+    }
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2em;
+    }
+    .skill-card {
+      background: var(--main-bg);
+      border-radius: 10px;
+      padding: 1em 1.4em;
+      box-shadow: 0 2px 8px rgba(25,50,90,0.05);
+      color: var(--primary);
+      font-weight: 600;
+      flex: 1 0 130px;
+      text-align: center;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+      gap: 1em;
+    }
+    .project-card {
+      background: var(--main-bg);
+      border-radius: 10px;
+      padding: 1em;
+      box-shadow: 0 2px 8px rgba(25,50,90,0.07);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .project-card img {
+      max-width: 100%;
+      border-radius: 6px;
+      margin-bottom: 0.8em;
+    }
+    .cta {
+      text-align: center;
+      margin: 2em 0 0 0;
+    }
+    .cta-btn {
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 0.9em 2.5em;
+      font-size: 1.2em;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 4px 16px rgba(25,50,90,0.04);
+      transition: background 0.2s;
+    }
+    .cta-btn:hover {
+      background: var(--accent);
+      color: var(--primary);
+    }
+    @media (max-width: 700px){
+      .container {
+        padding: 1em;
+      }
+      .skills, .projects {
+        flex-direction: column;
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Steeve Mocto</h1>
+      <p>Software Engineer | Web Developer</p>
+      <div>
+        <a href="mailto:andresteevemn@gmail.com">Email</a>·
+        <a href="https://www.linkedin.com/in/steeve-mocto-024429268/" target="_blank">LinkedIn</a>·
+        <a href="https://drive.google.com/file/d/1y7O6vOoN1Sfd3SrcTvCzzGsGd2ftKVmF/view?usp=drive_link">Resume</a>
+      </div>
+    </header>
+
+    <section>
+      <h2>About Me</h2>
+      <p>
+        Creative developer with 2+ years’ experience building engaging, high-converting digital products. Passionate about delivering delightful user experiences through clean, efficient code. Seeking to leverage my skills to help tech-driven teams reach their conversion goals.
+      </p>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <div class="skills">
+        <div class="skill-card">HTML5 & CSS3</div>
+        <div class="skill-card">JavaScript (ES6+)</div>
+        <div class="skill-card">React.js</div>
+        <div class="skill-card">Communication skills</div>
+        <div class="skill-card">UI/UX Design</div>
+        <div class="skill-card">Agile Development</div>
+        <div class="skill-card">Microservices</div>
+        <div class="skill-card">RESTful APIs</div>
+        <div class="skill-card">Node.js</div>
+        <div class="skill-card">AWS</div>
+        <div class="skill-card">Databases</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <div class="projects">
+
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?fit=crop&w=400&q=80" alt="Project Screenshot" />
+          <a href=""> <strong>Modern Portfolio Website</strong></a>
+          <p>Optimized personal website with interactive elements, improving lead conversion by 18%.</p>
+        </div>
+
+        <div class="project-card">
+          <video controls width="100%" style="border-radius:6px; margin-bottom:0.8em;">
+            <source src="Hms demo video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <a href="https://github.com/Steeve06/Healthcare_Management_System_ReactJs_Django"><strong>Revised Healthcare Management System</strong></a>
+          <p>Developed and optimized a full-stack Healthcare Management System using React.js and Django. The solution features a secure, role-based login, a modern dark-themed user interface, and scalable architecture tailored to clinical operations. Emphasized modular code structure, data integrity, and efficiency in both backend and frontend. Documented environment setup for streamlined deployment and maintainable development cycles</p>
+        </div>
+
+        <div class="project-card">
+          <video controls width="100%" style="border-radius:6px; margin-bottom:0.8em;">
+            <source src="hms_demo1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <a href="https://github.com/Steeve06/SWE_hms_project"><strong>Simple Healthcare Management System</strong></a>
+          <p>Developed a full-stack Hospital Management System to streamline hospital operations and centralize data management. The system improves efficiency by integrating patient information, doctor schedules, medical records, and appointments into one cohesive platform.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section>
+      <h2>Testimonials/Recommendations</h2>
+      <blockquote>
+        “Andre Steeve was a student in the Fall 2023 semester in my ECON 1000 Contemporary Economics class and his performance in the class was exemplary.”
+        <br><em>— Thomas Garr, MBA & KSU Adjunct Lecturer</em>
+        <a href="https://drive.google.com/file/d/1A6aoqOEIIH4ZZ5uCoJq5-lyNMYe21jnh/view?usp=drive_link"  style="color:#ffa600;font-weight:bold;text-decoration:underline;">See More</a>
+      </blockquote>
+    </section>
+
+
+  </div>
+
+</body>
+</html>

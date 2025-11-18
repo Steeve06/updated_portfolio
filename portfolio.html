@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Andre Steeve Mocto Ngatchouissi | Portfolio</title>
+  <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#home" data-section="home" class="active">Home</a></li>
+      <li><a href="#projects" data-section="projects">Projects</a></li>
+      <li><a href="#experience" data-section="experience">Experience</a></li>
+      <li><a href="#skills" data-section="skills">Skills</a></li>
+      <li><a href="#education" data-section="education">Education</a></li>
+      <li><a href="#contact" data-section="contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="home" class="section active">
+      <div class="landing-container">
+        <div class="center-box">
+          <h1>Andre Steeve Mocto Ngatchouissi</h1>
+          <p class="about-me">
+            Results driven Software Engineering graduate student with hands-on experience developing fully functional software systems mainly using python and django. Demonstrated expertise in building web applications
+            with role based authentication, effective debugging, and optimizing performance across multiple projects. Proven ability to balance academic excellence with practical development work. Strong problem-solving skills evidenced through regular algorithm  practice combined with experience in software architecture,
+            project management and modern development practices. Seeking to leverage technical proficiency in Python, Django and full-stack development to contribute to innovative software solutions in a dynamic engineering environment.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="card-container">
+
+        <div class="card">
+          <span class="card-title">Comprehensive Healthcare Management System</span>
+          <span class="card-summary">Full-stack system to streamline hospital operations, built with Python and Django.</span>
+          <button class="card-btn" onclick="showDescription('project1')">View More</button>
+          <div class="full-description" id="project1">
+            Developed a full-featured healthcare management platform using Django framework with role-based authentication supporting patients, doctors, and administrators.
+            The system includes patient registration and profile management, doctor dashboard with appointment scheduling capabilities, integrated FullCalendar for real-time appointment booking,
+            medical records management with secure patient data handling, and responsive user interface with custom CSS styling.
+            Implemented complex database relationships between Patient, Doctor, and Appointment models, troubleshot Django migrations and static file serving, and resolved template rendering issues.
+            The application features form validation, user authentication workflows, and a clean, professional interface optimized for healthcare workflows.
+          </div>
+        </div>
+
+        <div class="card">
+          <span class="card-title">Restaurant Management System</span>
+          <span class="card-summary">Full-stack system to streamline restaurant operations and inventory, built with mysql and Java.</span>
+          <button class="card-btn" onclick="showDescription('project2')">View More</button>
+          <div class="full-description" id="project2">
+            Led the end-to-end development of a robust restaurant management system by architecting and implementing core modules for inventory tracking, order management, and table availability.
+            Designed a relational database in SQL to ensure data integrity and optimized performance, while using Java to build an efficient and scalable backend for seamless business operations.
+            Streamlined the workflow by automating order handling and real-time inventory updates, reducing manual tasks and improving synchronization between kitchen and service staff.
+            This comprehensive integration achieved a 70% faster workflow for clients and reduced operational errors by 85%, significantly enhancing service accuracy and overall efficiency.
+          </div>
+        </div>
+
+        <div class="card">
+          <span class="card-title">Event-Tracker App</span>
+          <span class="card-summary">Mobile app (Flutter, Dart) designed to improve campus event management and student engagement.</span>
+          <button class="card-btn" onclick="showDescription('project3')">View More</button>
+          <div class="full-description" id="project3">
+            Built resilient backend APIs using Firebase to support seamless data synchronization and real-time updates across the application, enhancing its scalability and reliability.
+            Implemented secure authentication, optimized database queries, and leveraged cloud functions to automate backend processes and handle high traffic efficiently.
+            Focused on creating a flexible infrastructure that ensured consistent performance and minimal downtime, even under increased user load.
+            These improvements directly contributed to a 40% boost in student event participation by delivering a faster, more engaging, and dependable user experience.
+          </div>
+        </div>
+
+
+        <div class="card">
+          <span class="card-title">ETL Data Pipeline</span>
+          <span class="card-summary">Automated extract-transform-load data pipeline using Python, MySQL, and AWS.</span>
+          <button class="card-btn" onclick="showDescription('project4')">View More</button>
+          <div class="full-description" id="project4">
+            Designed and deployed a pipeline processing thousands of records daily for analytics. Enhanced data retrieval speed and security.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <h2>Experience</h2>
+      <div class="card-container">
+
+        <div class="card">
+          <span class="card-title"> Food First | Web Architect/Developer & System Engineer</span>
+          <span class="card-summary">Redesigned website for improved navigation and engagement. Collaborated with stakeholders on digital strategy to design new website.</span>
+          <button class="card-btn" onclick="showDescription('exp1')">View More</button>
+          <div class="full-description" id="exp1">
+            Increased site navigation by 70% and user engagement by 80% by implementing an intuitive UI/UX design paired with robust backend enhancements for faster data retrieval and smoother page transitions.
+            Optimized server performance and request handling using efficient database queries and caching mechanisms, significantly improving system responsiveness.
+            Strengthened backend resilience to handle peak traffic while maintaining stability, which reduced downtime of requests and ensured a consistent, high-quality user experience across the platform.
+            Monitored application performance with analytics tools like monster insights, Google Analytics and proactively resolved bottlenecks.
+          </div>
+        </div>
+
+        <div class="card">
+          <span class="card-title">MoctoTech Consulting LLC| Software Engineer</span>
+          <span class="card-summary">Developed and maintained over five high-quality software applications, achieving an average of 92% bug-free code through rigorous testing and code reviews. </span>
+          <button class="card-btn" onclick="showDescription('exp2')">View More</button>
+          <div class="full-description" id="exp2">
+            Collaborated with cross-functional teams to gather requirements, ensuring solutions aligned with business objectives and stakeholder needs.
+            Worked closely with product managers, designers, and end-users to define project goals and success metrics.
+            This collaboration fostered a clear understanding of business priorities and user pain points, enabling me to translate requirements into effective technical solutions that delivered measurable value.
+            Integrated third-party APIs to expand application functionality and streamline business operations.
+            Conducted code reviews and implemented best practices for version control and documentation, maintaining code quality and consistency across projects. Established rigorous review processes using Git and industry standards for documentation.
+            By sharing feedback and enforcing coding guidelines, I improved knowledge transfer, minimized bugs, and ensured all team members maintained high standards, resulting in more stable and maintainable software releases.
+            Enhanced system security by applying authentication, authorization, and encryption measures.
+            Provided technical support and training to end-users, ensuring smooth adoption of new features.
+            Optimized legacy codebases, refactoring for improved performance, maintainability, and scalability.
+          </div>
+        </div>
+
+        <div class="card">
+          <span class="card-title">KamelTech Consulting| Software Engineer</span>
+          <span class="card-summary">Evaluated client IT infrastructure, recommended upgrades, and improved system performance by 40%. </span>
+          <button class="card-btn" onclick="showDescription('exp3')">View More</button>
+          <div class="full-description" id="exp3">
+            Developed and integrated web applications with React.js for the frontend and Django for the backend, enhancing client operational efficiency and increasing user engagement by 60%.
+            Designed scalable, interactive user interfaces in React.js and built secure, RESTful APIs with Django to support complex data operations.
+            This seamless integration enabled faster workflows, intuitive user experiences, and empowered clients to manage their operations with greater ease, directly resulting in a 60% rise in user engagement.
+            Migrated client data and applications to AWS/Azure, cutting costs by 30% and improving system scalability and reliability.
+            Planned and executed smooth migration strategies, transitioning legacy systems and large datasets to cloud platforms such as AWS and Azure.
+            Leveraged automated deployment, disaster recovery solutions, and cloud-native services to reduce infrastructure costs by 30%, while also providing clients with scalable, resilient environments equipped for future growth.
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div class="card-container">
+
+        <div class="card">
+          <span class="card-title">Programming Languages</span>
+          <span class="card-summary">Python <br> Java<br>PHP<br> HTML/CSS<br> JavaScript<br> </span>
+          <button class="card-btn" onclick="showDescription('skill1')">View More</button>
+          <div class="full-description" id="skill1">
+            Used in full-stack projects, automation, data science, and mobile development.
+          </div>
+        </div>
+
+        <div class="card">
+          <span class="card-title">Cloud & Databases</span>
+          <span class="card-summary">AWS S3<br> AWS Lambda<br> AWS RDS<br> MySQL<br> Microsoft SQL Server</span>
+          <button class="card-btn" onclick="showDescription('skill2')">View More</button>
+          <div class="full-description" id="skill2">
+            Extensive experience with deploying scalable backend and cloud solutions.
+          </div>
+        </div>
+
+        <div class="card">
+          <span class="card-title">Certifications</span>
+          <span class="card-summary">Meta Coursera Intro to Database and MySQL<br>Meta Coursera Version Control <br>Meta Coursera Intro to Databases <br>Appian Developer<br> AWS Certified Cloud Practitioner (CLF-C02) Cert Prep: 1 Cloud Concepts<br> </span>
+          <button class="card-btn" onclick="showDescription('skill3')">View More</button>
+          <div class="full-description" id="skill3">
+            Extensive experience with deploying scalable backend and cloud solutions.
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="education" class="section">
+      <h2>Education</h2>
+      <div class="card-container">
+        <div class="card">
+          <span class="card-title">Master of Science, Software Engineering</span>
+          <span class="card-summary">Kennesaw State University, Aug. 2025 - Present</span>
+          <button class="card-btn" onclick="showDescription('ed1')">View More</button>
+          <div class="full-description" id="ed1">
+            Advanced coursework in cloud computing, software design, software architecture, project planning and data engineering.
+          </div>
+        </div>
+        <div class="card">
+          <span class="card-title">Bachelor of Science, Computer Science</span>
+          <span class="card-summary">Kennesaw State University, Jan 2023 - May 2024</span>
+          <button class="card-btn" onclick="showDescription('ed2')">View More</button>
+          <div class="full-description" id="ed2">
+            Foundations in programming, web and mobile development, and algorithms.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <div class="center-box">
+        <p>Email: <a href="mailto:andresteevemn@gmail.com">andresteevemn@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/steeve-mocto-024429268/" target="_blank">Click Me</a></p>
+        <p>Github: <a href="https://github.com/Steeve06" target="_blank">Click Me</a></p>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Andre Steeve Mocto Ngatchouissi</p>
+  </footer>
+
+  <script>
+    // SPA navigation logic
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', function(e){
+        e.preventDefault();
+        document.querySelectorAll('nav a').forEach(l => l.classList.remove('active'));
+        link.classList.add('active');
+        const section = link.getAttribute('data-section');
+        document.querySelectorAll('.section').forEach(sec => sec.classList.remove('active'));
+        document.getElementById(section).classList.add('active');
+        window.location.hash = section;
+      });
+    });
+    // Show/Hide card descriptions
+    function showDescription(id) {
+      const el = document.getElementById(id);
+      if (el.style.display === 'block') {
+        el.style.display = 'none';
+      } else {
+        el.style.display = 'block';
+      }
+    }
+    // Hash navigation (on page reload)
+    window.addEventListener('DOMContentLoaded', () => {
+      const hash = window.location.hash.replace('#','');
+      if(hash) {
+        document.querySelectorAll('nav a').forEach(l => l.classList.remove('active'));
+        document.querySelector(`nav a[data-section="${hash}"]`).classList.add('active');
+        document.querySelectorAll('.section').forEach(sec => sec.classList.remove('active'));
+        document.getElementById(hash).classList.add('active');
+      }
+    });
+  </script>
+</body>
+</html>
